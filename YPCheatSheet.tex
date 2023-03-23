@@ -98,7 +98,9 @@ $A_\mathbf{s}$ & The self-destruct set. These accounts will be discarded followi
 $A_\mathbf{l}$ & The log series. \\
 $A_\mathbf{t}$ & The set of touched accounts. Empty ones are deleted at the end of the transaction.\\
 $A_r$ & The gas refund balance. Can partially offset execution costs.\\
-$A^0$ & The empty substate: $A^0 \equiv (\varnothing, (), \varnothing, 0)$. \\
+$A_{\mathbf{a}}$ & The set of accessed account addresses (EIP-2929).\\
+$A_{\mathbf{K}}$ & The set of accessed storage keys (EIP-2929, more accurately, each element of $A_{\mathbf{K}}$ is a tuple of a 20-byte account address and a 32-byte storage slot).\\
+$A^0$ & The empty substate: $A^0 \equiv (\varnothing, (), \varnothing, 0, \pi, \varnothing )$. \\
 
 \vspace{5pt} \\
 \midrule
